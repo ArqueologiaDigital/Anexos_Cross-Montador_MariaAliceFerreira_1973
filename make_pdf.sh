@@ -8,4 +8,7 @@ done
 
 echo "Generating the final PDF ..."
 convert originais/capa*.lowres.jpg originais/sinopse*.lowres.jpg originais/indice*.lowres.jpg originais/p*.lowres.jpg PDF/Anexo_21_Maria_Alice.pdf
+
+rm originais/*.lowres.jpg
 echo "done."
+
