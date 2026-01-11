@@ -1,0 +1,58 @@
+// JOB    0001 0010                                      *     E102,MAL
+
+LOG DRIVE   CART SPEC   CART AVAIL  PHY DRIVE
+  0000        0001        0001        0000
+  0001        0010        0010        0001
+                          1008        0002
+
+V2 MO9   ACTUAL 16K  CONFIG 16K
+
+* LABORATORIO DE SISTEMAS DIGITAIS * EPUSP *  06/ 12/ 74  * 18 H  28 MIN
+
+// FOR
+*LIST SOURCE PROGRAM
+*ONE WORD INTEGERS
+*IOCS(1403PRINTER,DISK)
+      DIMENSION IVAC(80)
+      DIMENSION INIC(48)  ,NIT(10,4)
+      DATA INIC / 21*0,'A','B','C','D','E','F','0','1','2','3','4',
+     1       '5','6','7','8','9',  11*0 /
+      DEFINE FILE 8(4800,1,U,NR)
+      JM=0
+      JJ=1
+      NR=l1
+      WRITE(5,1)
+    1 FORMAT(1HO,1OX,'LISTAGEM DA SAIDA DE DISCO DO CROSS-MONTADOR')
+      READ(8'NR) IVAC
+      NFIM=IVAC(8)*20
+      GO T0 6
+    5 READ(8'NR) IVAC
+    6 DO 15 JT=1,80,10
+      DO 300 I=1,10
+      JM=JM+1
+      JI=I+JT-1
+      CALL WZITR(IVAC(JI),J,K,L,M)
+      NIT(I,1)=INIC(J)
+      NIT(I,2)=INIC(K)
+      NIT(I,3)=INIC(L)
+      NIT(i,4)=INIC(M)
+  300 CONTINUE
+      IF (JM-NFIM)310,310,311
+  310 WRITE(5,7600) JJ((NIT(1,L),L=1,4),I=1,10)
+ 7600 FORMAT(1H ,I6,10(5X,4A1))
+   15 JJ=JJ+10
+      GO TO 5
+  311 KLL=10-(JM-NFIM)
+      WRITE(5,7600)JJ,((NIT(I,L),L=1,4),I=1,KLL)
+   20 CALL EXIT
+      END
+
+ UNREFERENCED STATEMENTS
+  20
+
+ FEATURES SUPPORTED
+  ONE WORD INTEGERS
+  IOCS
+
+CORE REQUIREMENTS FOR
+ COMMON      O  VARTABLES    196  PROGRAM    334

@@ -1,0 +1,121 @@
+C09
+
+NOME DO PROGRAMA CODIGO DE KCOPDIGO no
+PROGRAMA DE TRATAMENTO  ||ATIVIDADE PROGRAMA
+DAS INSTRUCOES NA PRI:— ||NUM. DO DOCUMENT WZESS
+MEIRA FASR.
+
+Ley,
+PROGRAMANOR DATA
+
+LINGUAGE! USADA
+
+nasic [|
+
+Aueotl |...) 1
+
+TIPO DE PROGRAMA
+
+priver{ J susrourre (
+
+PRINCIPAL X
+
+: re
+
+| OUTROS Hl
+
+IDENTIFICACAO ROS DISCOS (FI
+0010
+
+TAS) || SISTEMA SUPORTE (SIST. OPERACIONAL
+
+E HARDWARE)
+
+CHAVES DO PAINEL OU SAIDAS 2
+CHAVE 1
+
+LUEEBRMNATIVAS
+
+DESCRIGAO DO PROGRAMA
+
+Este programa faz o
+fase do processmmento. As
+
+de rotina
+
+tratamento adequado em cad
+—- verificacao
+
+tamento corres pondente,
+
+como parte de sua geracdo,
+
+caso de ocorréncia destes,
+ta fase,
+
+com listag dec
+~- vistoria da tabela
+
+mento do programa,
+
+- leitura dos comandos e sua grav
+
+tratamento das instrugoes na primeira
+
+suas principais fung@¢gdes soz:
+
+- determinagao do tipo do comando,
+
+5 . ~ 5 a - - 4 :
+~ determinagao da existéncia de rotulos das
+
+- verificagao de existéncia de operando nas
+
+@& caso,
+
+~- tratamento dos comentarios,
+
+cancelamento
+omandos
+
+2
+de simbolos,
+
+- chamada do programa tratador da
+
+agao em disco,
+
+© que 6 feito através
+
+de pesquisa em tabela de simbolos.
+
+instrueoes.
+imstrugoes, e
+
+de indicaga&o de indireto nos cemandos e tra
+
+- atualizagao do contador de instrueoes.
+- gerenciamento do buffer de informacgao
+
+suplementar, bem
+
+-tratamento de algumas pseudos especificas, como: BLOC,
+COM, ORG, DEFER, DN, EBC, ASC, END, Ex? ,
+- determinacao do numero de erros
+
+ABS,
+da primeira fase, e no
+
+© erros,
+
+7
+com possivel cancela—
+
+unda fase,
+
+4 (ase o verso, se necessario)
+
+do programa ao fim, des—'
+
+|
+
