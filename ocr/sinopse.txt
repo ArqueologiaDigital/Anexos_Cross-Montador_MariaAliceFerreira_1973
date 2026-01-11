@@ -1,0 +1,32 @@
+SINOPSE
+-------
+
+	O presente trabalho descreve detalhadamente o sistema
+Cross-Montador escrito para o computador Pato Feio, desen-
+volvido para o computador IBM-1130.
+
+	A finalidade de um sistema Cross—Montador é principal-
+mente auxiliar o desenvolvimento de "software" aurante a fa-
+se de desenvolvimento do "hardware" de um computador.
+
+	Quando se dispõe de um tal sistema, pode-se desenvol-
+ver em paralelo estas duas fases do projeto de um computa-
+dor. Nestas condições pode-se lançar mão de um recurso adi-
+cional que é o emprego de um programa Simulador, processan-
+do-se neste, os programas já escritos que não podem ser pro-
+cessados na máquina final, por esta não estar ainda imple-
+mentada.
+
+	Uma segunda finalidade de um tal sistema é auxiliar o
+"debugging" de programas, numa fase seguinte, com a máqui-
+na já em estado operacional. As vantagens de uso de um tal
+sistema nesta fase, é principalememte na utilização de má-
+quinas de maior porte que a máquina objetivo, com maiores
+recursos daquela de que se dispõe. Por exemplo, a utiliza-
+ção de uma máquina com recursos de disco para preparar pro-
+gramas para uma máquina que dispõe apenas de um sistema de
+fita perfurada.
+
+	Neste trabalho estão descritos os principais módulos
+e arquivos utilizados pelo sistema, bem como a interrelação
+entre os diversos módulos de programa.
