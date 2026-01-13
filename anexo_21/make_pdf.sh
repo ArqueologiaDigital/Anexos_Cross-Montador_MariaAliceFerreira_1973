@@ -1,3 +1,5 @@
+mkdir -p PDF
+
 width=600
 echo "Generating lowres pages:"
 for f in originais/*.png
